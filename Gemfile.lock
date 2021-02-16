@@ -3,6 +3,9 @@ GEM
   specs:
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.5)
+    puma (5.2.1)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
@@ -21,6 +24,7 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
+  puma
   shotgun
   sinatra
 
