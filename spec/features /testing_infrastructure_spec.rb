@@ -10,9 +10,20 @@ end
 feature "enter player names" do
   scenario "returns entered names on the screen" do
     visit '/'
-    fill_in('name1', with: 'Ian')
-    fill_in('name2', with: 'Anna')
+    fill_in :name1, with: 'Ian'
+    fill_in :name2, with: 'Anna'
     click_button('Submit')
     expect(page).to have_content "The next fight is between Ian and Anna"
   end
-end
+end 
+
+  feature "enter player names" do
+    scenario "returns entered names on the screen" do
+      visit '/'
+      fill_in(:name1, with: 'Ian')
+      fill_in(:name2, with: 'Anna')
+      click_button('Submit')
+      expect(page).to have_content "Anna has 60HP"
+    end
+  end
+ 
