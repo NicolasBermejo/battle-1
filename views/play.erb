@@ -1,6 +1,6 @@
-The next fight is between <%= @player1.name %> and <%= @player2.name %> <br>
-<%= @player1.name %> has <%= @player1.hp %>HP <br>
-<%= @player2.name %> has <%= @player2.hp %>HP
+The next fight is between <%= @game.player1.name %> and <%= @game.player2.name %> <br>
+<%= @game.player1.name %> has <%= @game.player1.hp %>HP <br>
+<%= @game.player2.name %> has <%= @game.player2.hp %>HP
 
 <form action='/attack' >
 <input type="submit" value="Attack">
